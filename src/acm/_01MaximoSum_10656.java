@@ -3,7 +3,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class MaximoSum_10656 {
+public class _01MaximoSum_10656 {
 	public static void main(String[] args) throws IOException {
 		//leo de consola gracias a BuffereadReader (memoria en vez del disco) del InputStreamReader(System.in)
 		BufferedReader buffer = new BufferedReader(new InputStreamReader(System.in));
