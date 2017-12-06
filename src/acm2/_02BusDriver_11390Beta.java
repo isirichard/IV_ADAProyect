@@ -1,14 +1,16 @@
 package acm2;
 import java.io.IOException;
-import java.util.Arrays;
 import java.util.Scanner;
-
-public class _02BusDriver_11390Beta {
+class Main{
 	public static int NumberOfBusDrivers, Distance, Over;
 	public static int[] Morning;
 	public static int[] Evening;
 
 	public static void main(String args[]) throws NumberFormatException, IOException{
+		Main bus=new Main();
+		bus.begin();
+	}
+	void begin(){
 		Scanner Input = new Scanner(System.in);
 		//capturo valores para el bucle
 		while(true){

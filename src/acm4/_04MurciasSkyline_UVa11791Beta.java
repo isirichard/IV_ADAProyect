@@ -4,11 +4,12 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
-
-public class _04MurciasSkyline_UVa11791Beta {
-
-	public static void main(String[] args) throws NumberFormatException, IOException {
-		
+class Main{
+	public static void main(String[] args) throws NumberFormatException, IOException{
+		Main mur=new Main();
+		mur.begin();
+	}
+	void begin() throws NumberFormatException, IOException{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringBuilder sb = new StringBuilder();
 		int TC = Integer.parseInt(br.readLine());
@@ -60,4 +61,5 @@ public class _04MurciasSkyline_UVa11791Beta {
 		System.out.print(sb);
 	}
 }
+
 
