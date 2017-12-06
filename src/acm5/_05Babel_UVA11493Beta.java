@@ -6,9 +6,12 @@ import java.util.HashSet;
 import java.util.PriorityQueue;
 import java.util.Scanner;
 import java.util.Set;
-
-public class _05Babel_UVA11493Beta {
-    private final int oo = 10000000;
+class Main{
+	public static void main(String[] args) throws Exception{
+    	Main program = new Main();
+        program.run();		
+    }
+	private final int oo = 10000000;
     private int N, start, end;
     private String start_lang, end_lang;
     private HashMap<String, Integer> words, lang_index;
@@ -39,7 +42,7 @@ public class _05Babel_UVA11493Beta {
         }
         return -1;
     }
-    void run() throws Exception {
+	void run() throws Exception {
         Scanner scanner = new Scanner(System.in);
         N = scanner.nextInt();
 
@@ -106,11 +109,6 @@ public class _05Babel_UVA11493Beta {
             else              System.out.println(answer);
             N = scanner.nextInt();
         }
-    }
-	
-    public static void main(String[] args) throws Exception{
-    	_05Babel_UVA11493Beta program = new _05Babel_UVA11493Beta();
-        program.run();		
     }
 }
 
