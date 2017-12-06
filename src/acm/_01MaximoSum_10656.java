@@ -11,6 +11,7 @@ public class _01MaximoSum_10656 {
 		String st = buffer.readLine();
 		//Pregunto si es cero
 		while (!st.equals("0")) {
+			double inicio=System.currentTimeMillis();
 			//en caso de no ser cero capturo el primer n�mero
 			int n = Integer.parseInt(st);
 			//creo un arreglo de ese tama�o
@@ -25,8 +26,10 @@ public class _01MaximoSum_10656 {
 			for (int j = 0; j < n; j++) {
 				//calculo la suma total
 				sum += arr[j];
-				//pregunto si ans (auxiliar) es menor que la suma o el auxiliar es igual y j-init menor fin-ini
+				//pregunto si ans (suma acumulativa auxiliar) es menor que la suma 
+				//o el auxiliar es igual y j-init menor fin-ini
 				if (ans < sum || (ans == sum && j - init < fin - ini)) {
+					//para tener un nuevo inicio
 					ans = sum;
 					fin = j;
 					ini = init;
@@ -39,11 +42,19 @@ public class _01MaximoSum_10656 {
 			}
 			for (int i = ini; i < fin; i++) {
 				if (arr[i] != 0) {
-					System.out.print(arr[i] + " ");
+					//System.out.print(arr[i] + " ");
 				}
 			}
-			System.out.println(arr[fin]);
+			//System.out.println(arr[fin]);
+			
+			
+			double fini=System.currentTimeMillis();
+			System.out.print((fini-inicio)/1000+" ");
+			//imprimir(arr);
+			System.out.println();
 			st = buffer.readLine();
+
 		}
 	}
 }
+
